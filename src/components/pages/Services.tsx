@@ -70,7 +70,7 @@ const Services = () => {
       </Container>
 
       <SectionHeader
-        heading="Inside Our"
+        heading="Our"
         highlight="Home"
         paragraph="Baraka Suu is more than a care facility - it's a place of peace, personality, and purpose. 
         Our thoughtfully arranged rooms, shared spaces, and natural surroundings encourage connection and 
@@ -102,11 +102,11 @@ const Services = () => {
               <p>
                 Send your resume to{" "}
                 <a
-                  href="mailto:barakasuu@adultfamilyhome.com"
+                  href="mailto:careers@barakasuuafh.com"
                   className="fw-bold fs-6"
                   style={{ color: "#001f3f" }}
                 >
-                  barakasuu@adultfamilyhome.com
+                  careers@barakasuuafh.com
                 </a>{" "}
                 to apply.
               </p>

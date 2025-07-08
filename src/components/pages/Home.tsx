@@ -39,15 +39,20 @@ const Home = () => {
                     <Col md={6}>
                         <Card className="h-100 shadow-sm border-0">
                             <Card.Body>
-                                <Card.Title className="fw-bold">Home Of Blessings</Card.Title>
+                                <Card.Title className="fw-bold fst-italic" style={{ color: '#0d6efd' }}>Home Of Blessings</Card.Title>
                                 <br />
+                                <Card.Text className="fst-italic">
+                                    &ldquo; Baraka Suu Adult Family Home LLC is a family owned business run by the Bayo Family. 
+                                    Our team consists of 6 dedicated, experienced staff members with years of experience.&rdquo;
+                                </Card.Text>
                                 <Card.Text>
                                     At Baraka Suu Adult Family Home, we welcome your loved ones into an environment 
                                     built on warmth, dignity, and heartfelt care. Our home in Stanwood, Washington, 
                                     offers more than just support — it's a place where compassion flourishes and 
                                     every resident is embraced as part of our extended family. 
                                     Here, comfort and connection come together to create a truly blessed 
-                                    living experience.
+                                    living experience. We also support individuals with dimentia, developmental disabilities,
+                                    and mental health needs.
                                 </Card.Text>
                             </Card.Body>
                         </Card>

@@ -33,7 +33,7 @@ const Contact = () => {
                                     <Envelope size={24} color="#001f3f" />
                                 </div>
                                 <p className="mb-0 fw-bold">Email</p>
-                                <p>barakasuu@adultfamilyhome.com</p>
+                                <p>info@barakasuuafh.com</p>
                             </div>
 
                             <div>
@@ -41,7 +41,7 @@ const Contact = () => {
                                     <Telephone size={24} color="#001f3f" />
                                 </div>
                                 <p className="mb-0 fw-bold">Phone</p>
-                                <p>(206) 446-7544</p>
+                                <p>(360) 436-2518</p>
                             </div>
                         </div>
                     </Col>

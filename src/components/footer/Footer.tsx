@@ -14,8 +14,8 @@ const Footer = () => {
         <Row className="text-white text-center text-md-start g-4">
           {/* Logo & About */}
             <Col md={4}>
-                <h5 className="fw-bold">Baraka Suu Adult Family Home</h5>
-                <p>Home Of Blessings</p>
+                <h5 className="fw-bold">Baraka Suu AFH</h5>
+                <p>&ldquo;Home Of Blessings&rdquo;</p>
                 <p>Compassionate care in a welcoming, home-like environment.</p>
             </Col>
 
@@ -23,8 +23,8 @@ const Footer = () => {
             <Col md={4}>
                 <h6 className="fw-bold mb-3">Contact Info</h6>
                 <p><GeoAltFill className="me-2" />27913 76th DR NW, Standwood WA 98292</p>
-                <p><TelephoneFill className="me-2" /> (206) 446-7544</p>
-                <p><EnvelopeFill className="me-2" /> barakasuu@adultfamilyhome.com</p>
+                <p><TelephoneFill className="me-2" /> (360) 436-2518</p>
+                <p><EnvelopeFill className="me-2" /> info@barakasuuafh.com</p>
             </Col>
 
 
