@@ -13,7 +13,7 @@ const SlideShow = () => {
                 </div>
                
                 <Carousel.Caption>
-                    <h3 className='fw-bold'>Home of Blessings</h3>
+                    <h3 className='fw-bold fst-italic'>Home of Blessings</h3>
                     <p>We provide a nurturing environment where every resident feels valued and at home.</p>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -25,7 +25,7 @@ const SlideShow = () => {
                 </div>
                 
                 <Carousel.Caption>
-                    <h3 className='fw-bold'>Where Care Feels Like Family</h3>
+                    <h3 className='fw-bold fst-italic'>Where Care Feels Like Family</h3>
                     <p>Dedicated caregivers. Peaceful surroundings. A place where hearts feel safe.</p>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -37,7 +37,7 @@ const SlideShow = () => {
                 </div>
                 
                 <Carousel.Caption>
-                    <h3 className='fw-bold'>Where Love Meets Care </h3>
+                    <h3 className='fw-bold fst-italic'>Where Love Meets Care </h3>
                     <p>Your loved ones deserve care wrapped in compassion, dignity, and love.</p>
                 </Carousel.Caption>
             </Carousel.Item>
