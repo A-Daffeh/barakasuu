@@ -1,9 +1,14 @@
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Form, Button, Toast, ToastContainer } from "react-bootstrap";
 import { Envelope, GeoAlt, Telephone } from "react-bootstrap-icons";
 import SectionHeader from "../utils/SectionHeader";
 import emailjs from "emailjs-com";
+import { useState } from "react";
 
 const Contact = () => {
+
+  const [showToast, setShowToast] = useState(false);
+  const [toastMessage, setToastMessage] = useState("");
+  const [toastVariant, setToastVariant] = useState<"success" | "danger">("success");
   
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
@@ -17,11 +22,15 @@ const Contact = () => {
         "GJiITNMK-L2Of6nQP"
     )
     .then(() => {
-      alert("✅ Message sent successfully!");
+      setToastMessage("✅ Message sent successfully!");
+      setToastVariant("success");
+      setShowToast(true);
       form.reset();
     })
     .catch(() => {
-      alert("❌ Failed to send message.");
+      setToastMessage("❌ Failed to send message. Please try again.");
+      setToastVariant("danger");
+      setShowToast(true);
     });
 };
 
@@ -112,6 +121,19 @@ const Contact = () => {
           referrerPolicy="no-referrer-when-downgrade"
         />
       </Container>
+
+      <ToastContainer position="bottom-end" className="p-3">
+        <Toast
+          bg={toastVariant}
+          show={showToast}
+          onClose={() => setShowToast(false)}
+          delay={3000}
+          autohide
+        >
+          <Toast.Body className="text-white">{toastMessage}</Toast.Body>
+        </Toast>
+      </ToastContainer>
+
     </>
   );
 };
