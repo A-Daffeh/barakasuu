@@ -46,7 +46,7 @@ const About = () => {
             <Container className="my-5">
                 <Row className="g-4">
                     <Col md={6}>
-                        <Card className="h-100 shadow-sm border-0">
+                        <Card className="h-100 shadow-sm border-0 card-custom-bg">
                             <Card.Body className="p-0">
                                 <img src="/images/family.jpg" 
                                 alt="Home Owners" 
@@ -57,17 +57,17 @@ const About = () => {
                     </Col>
 
                     <Col md={6}>
-                        <Card className="h-100 shadow-sm border-0">
+                        <Card className="h-100 shadow-sm border card-custom-bg">
                             <Card.Body>
                                 <Card.Title className="text-center fw-bold">Our Vision & Mission</Card.Title>
                                 <br />
                                 <Card.Text>
-                                    <strong style={{ color: '#0d6efd' }}>Our Mission</strong> is to provide a nurturing, home-like environment
+                                    <strong style={{ color: '#D4AF37' }}>Our Mission</strong> is to provide a nurturing, home-like environment
                                      where older adults receive the individualized care, respect, and attention 
                                      they deserve. We strive to enrich lives through compassion, cultural sensitivity,
                                       and meaningful relationships.
                                     <br /><br />
-                                    <strong style={{ color: '#0d6efd' }}>Our Vision</strong> is to be a trusted sanctuary of care — a place 
+                                    <strong style={{ color: '#D4AF37' }}>Our Vision</strong> is to be a trusted sanctuary of care — a place 
                                     where every resident is valued, every day is purposeful, and every moment 
                                     reflects the blessing of being part of a family.
                                 </Card.Text>
@@ -77,7 +77,7 @@ const About = () => {
                 </Row>
             </Container>
 
-            <div style={{ backgroundColor: "#f8f9fa", padding: "20px 0" }}>
+            <div className="section-highlight-green">
                 <SectionHeader
                     heading="Follow"
                     highlight="Us"
@@ -85,10 +85,12 @@ const About = () => {
                 />
                 <Container className="text-center my-5">
                     <div className="d-flex justify-content-center gap-4 mt-3">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/people/Baraka-Suu-Adult-Family-Home-LLC/61578253918226/?mibextid=wwXIfr&rdid=gzr7Jv40NgYyQxRB&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1LcccBwGzf%2F%3Fmibextid%3DwwXIfr"
+                         target="_blank" 
+                         rel="noopener noreferrer">
                         <img src="/images/facebook.png" alt="Facebook" width="30" />
                         </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/barakasuuafh?igsh=MTU2NzZiMnk3bzJs&utm_source=qr" target="_blank" rel="noopener noreferrer">
                         <img src="/images/instagram.png" alt="Instagram" width="30" />
                         </a>
                     </div>
@@ -106,12 +108,13 @@ const About = () => {
                 <Row className="g-4">
                     {contents.map((content, index) => (
                     <Col md={3} key={index}>
-                        <Card className="h-100 shadow-sm border-0">
-                        <Card.Img variant="top" src={content.image} alt={content.name} />
-                        <Card.Body>
-                            <Card.Title className="fw-bold fs-6">{content.name}</Card.Title>
-                            <Card.Text>{content.description}</Card.Text>
-                        </Card.Body>
+                        <Card className="h-100 shadow-sm border card-custom-bg">
+                            <Card.Img variant="top" src={content.image} alt={content.name} />
+                            <Card.Body>
+                                <Card.Title className="fw-bold fs-6">{content.name}</Card.Title>
+                                <hr />
+                                <Card.Text>{content.description}</Card.Text>
+                            </Card.Body>
                         </Card>
                     </Col>
                     ))}

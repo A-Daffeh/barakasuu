@@ -49,10 +49,10 @@ const Contact = () => {
         <Row className="g-4">
           {/* Contact Info */}
           <Col md={6}>
-            <div className="p-4 shadow rounded bg-white text-center">
+            <div className="p-4 shadow rounded text-center border" style={{ borderColor: "#f0eada" }}>
               <div className="mb-4">
                 <div className="icon-circle mx-auto mb-2">
-                  <GeoAlt size={24} color="#001f3f" />
+                  <GeoAlt size={24} color="#D4AF37" />
                 </div>
                 <p className="mb-0 fw-bold">Address</p>
                 <p>27913 76th DR NW<br />Stanwood, WA 98292</p>
@@ -60,7 +60,7 @@ const Contact = () => {
 
               <div className="mb-4">
                 <div className="icon-circle mx-auto mb-2">
-                  <Envelope size={24} color="#001f3f" />
+                  <Envelope size={24} color="#D4AF37" />
                 </div>
                 <p className="mb-0 fw-bold">Email</p>
                 <p>info@barakasuuafh.com</p>
@@ -68,7 +68,7 @@ const Contact = () => {
 
               <div>
                 <div className="icon-circle mx-auto mb-2">
-                  <Telephone size={24} color="#001f3f" />
+                  <Telephone size={24} color="#D4AF37" />
                 </div>
                 <p className="mb-0 fw-bold">Phone</p>
                 <p>(360) 436-2518</p>
@@ -78,8 +78,8 @@ const Contact = () => {
 
           {/* Contact Form */}
           <Col md={6}>
-            <h5 className="fw-bold text-center mb-3">Send Us a Message</h5>
-            <div className="p-4 shadow rounded bg-white">
+            <h5 className="fw-bold text-center mb-3" style={{ color: "#014421"}}>Send Us a Message</h5>
+            <div className="p-4 shadow rounded border" style={{ borderColor: "#f0eada" }}>
               <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="from_name">
                   <Form.Control type="text" name="from_name" placeholder="Your Name" required />
@@ -95,7 +95,7 @@ const Contact = () => {
 
                 <div className="text-center">
                   <Button
-                    style={{ backgroundColor: "#001f3f", border: "none" }}
+                    style={{ backgroundColor: "#014421", border: "none" }}
                     type="submit"
                     className="px-4"
                   >

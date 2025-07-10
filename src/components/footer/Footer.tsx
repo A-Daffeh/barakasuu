@@ -9,35 +9,39 @@ import {
 
 const Footer = () => {
   return (
-    <div className="footer" style={{ backgroundColor: "#003366", color: "#fff", padding: "40px 0" }}>
+    <div className="footer" style={{ backgroundColor: "#d0e8d8", padding: "40px 0" }}>
       <Container>
         <Row className="text-white text-center text-md-start g-4">
           {/* Logo & About */}
-            <Col md={4}>
-                <h5 className="fw-bold">Baraka Suu AFH</h5>
-                <p>&ldquo;Home Of Blessings&rdquo;</p>
-                <p>Compassionate care in a welcoming, home-like environment.</p>
+            <Col md={4} className="d-flex flex-column align-items-center align-items-md-start">
+                <img
+                  src="/images/barakasuu-logo.png"
+                  alt="Baraka Suu Logo"
+                  width="300"
+                  className="mb-3"
+                />
             </Col>
 
           {/* Contact Info */}
             <Col md={4}>
                 <h6 className="fw-bold mb-3">Contact Info</h6>
-                <p><GeoAltFill className="me-2" />27913 76th DR NW, Standwood WA 98292</p>
-                <p><TelephoneFill className="me-2" /> (360) 436-2518</p>
-                <p><EnvelopeFill className="me-2" /> info@barakasuuafh.com</p>
+                <p><GeoAltFill className="me-2" color="#D4AF37" />27913 76th DR NW, Standwood WA 98292</p>
+                <p><TelephoneFill className="me-2" color="#D4AF37" /> (360) 436-2518</p>
+                <p><EnvelopeFill className="me-2" color="#D4AF37" /> info@barakasuuafh.com</p>
             </Col>
 
 
         {/* Hours */}
           <Col md={2}>
             <h6 className="fw-bold mb-3">Reach Us</h6>
-            <p><ClockFill className="me-2" /> Monday to Sunday</p>
+            <p><ClockFill className="me-2" color="#D4AF37" /> Monday to Sunday</p>
             <p className="ms-4">9:00 am - 5:00 pm</p>
             <p>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="me-3">
+                <a href="https://www.facebook.com/people/Baraka-Suu-Adult-Family-Home-LLC/61578253918226/?mibextid=wwXIfr&rdid=gzr7Jv40NgYyQxRB&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1LcccBwGzf%2F%3Fmibextid%3DwwXIfr" 
+                target="_blank" rel="noopener noreferrer" className="me-3">
                     <img src="/images/facebook.png" alt="Facebook" width="24" />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/barakasuuafh?igsh=MTU2NzZiMnk3bzJs&utm_source=qr" target="_blank" rel="noopener noreferrer">
                     <img src="/images/instagram.png" alt="Instagram" width="24" />
                 </a>
             </p>

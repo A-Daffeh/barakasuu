@@ -48,13 +48,37 @@ const Services = () => {
         paragraph="Our services are built to support not just daily needs, but lifelong dignity, joy, and comfort."
       />
 
+      <Container className="mb-5">
+        <Row>
+          <Col md={6}>
+            <ul>
+              <li>Comprehensive safety features, including 24/7 security monitoring</li>
+              <li>Emergency response systems</li>
+              <li>Medication management</li>
+              <li>Personal care</li>
+              <li>Dementia</li>
+            </ul>
+          </Col>
+          <Col md={6}>
+            <ul>
+              <li>Nutritional dining services, including meal preparation, dietary accommodations</li>
+              <li>Engaging exercise, recreational activities, and creative hobbies</li>
+              <li>Incontinence support and hygiene care</li>
+              <li>Housekeeping and laundry services</li>
+              <li>Transportation</li>
+            </ul>
+          </Col>
+        </Row>
+      </Container>
+
+
       <Container className="my-5">
         <Row className="g-4">
           {contents.map((content, index) => (
             <Col md={4} key={index}>
-              <Card className="h-100 shadow-sm text-center p-3">
+              <Card className="h-100 shadow-sm text-center p-3 border card-custom-bg">
                 <Card.Body>
-                  <Card.Title className="fw-bold mb-3">{content.name}</Card.Title>
+                  <Card.Title className="fw-bold mb-3 fs-5">{content.name}</Card.Title>
                   <img
                     src={content.image}
                     alt={content.name}
@@ -89,12 +113,12 @@ const Services = () => {
       </div>
 
       {/* Join Our Team */}
-      <div style={{ backgroundColor: "#f8f9fa", padding: "20px 0" }}>
+      <div className="section-highlight-green">
         <Container className="my-5">
           <Row>
             <Col md={8}>
               <h2 className="section-header">
-                Join Our <span className="section-header-brand" style={{ color: '#0d6efd' }}>Team</span>
+                Join Our <span className="section-header-brand" style={{ color: '#D4AF37' }}>Team</span>
               </h2>
               <p>
                 Do you have a heart for service and compassion? Baraka Suu is always looking for caregivers who value connection and community. Be part of a team that truly makes a difference in the lives of others.
@@ -104,7 +128,7 @@ const Services = () => {
                 <a
                   href="mailto:careers@barakasuuafh.com"
                   className="fw-bold fs-6"
-                  style={{ color: "#001f3f" }}
+                  style={{ color: "#D4AF37" }}
                 >
                   careers@barakasuuafh.com
                 </a>{" "}

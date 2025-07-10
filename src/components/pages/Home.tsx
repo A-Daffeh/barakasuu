@@ -37,13 +37,13 @@ const Home = () => {
             <Container className="my-5">
                 <Row className="g-4">
                     <Col md={6}>
-                        <Card className="h-100 shadow-sm border-0">
+                        <Card className="h-100 shadow-sm border card-custom-bg">
                             <Card.Body>
-                                <Card.Title className="fw-bold fst-italic" style={{ color: '#0d6efd' }}>Home Of Blessings</Card.Title>
+                                <Card.Title className="fw-bold fst-italic">Home Of Blessings</Card.Title>
                                 <br />
                                 <Card.Text className="fst-italic">
-                                    &ldquo; Baraka Suu Adult Family Home LLC is a family owned business run by the Bayo Family. 
-                                    Our team consists of 6 dedicated, experienced staff members with years of experience.&rdquo;
+                                    <strong>&ldquo;</strong>Baraka Suu Adult Family Home LLC is a family owned business run by the Bayo Family. 
+                                    Our team consists of 6 dedicated, experienced staff members with years of experience.<strong>&rdquo;</strong>
                                 </Card.Text>
                                 <Card.Text>
                                     At Baraka Suu Adult Family Home, we welcome your loved ones into an environment 
@@ -75,15 +75,15 @@ const Home = () => {
                 <Row className="g-4">
                     {contents.map((item, index) => (
                     <Col md={4} key={index}>
-                        <Card className="h-100 shadow-sm">
-                        <Card.Body>
-                            <div className="mb-3 text-primary" style={{ fontSize: "2rem" }}>
-                            {item.icon}
-                            </div>
-                            <Card.Title className="fw-bold">{item.title}</Card.Title>
-                            <br />
-                            <Card.Text>{item.description}</Card.Text>
-                        </Card.Body>
+                        <Card className="h-100 shadow-sm border card-custom-bg">
+                            <Card.Body>
+                                <div className="mb-3" style={{ fontSize: "2rem", color: "#D4AF37" }}>
+                                {item.icon}
+                                </div>
+                                <Card.Title className="fw-bold fs-5">{item.title}</Card.Title>
+                                <br />
+                                <Card.Text>{item.description}</Card.Text>
+                            </Card.Body>
                         </Card>
                     </Col>
                     ))}

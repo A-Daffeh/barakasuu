@@ -5,14 +5,56 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/** Start of Nav Style **/
-.custom-navbar {
-  background-color: #001f3f !important;
-  min-height: 80px;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+h1, h2, h4, h5,
+.footer h6 {
+  color: #014421;
 }
+
+body {
+  background-color: #FFFDF5;
+  color: #2e4e3f;
+}
+
+/** Start of Nav Style **/
+
+.custom-navbar {
+  background-color: #d0e8d8 !important;
+  border-bottom: 4px solid #2e4e3f;
+}
+
+.custom-navbar .nav-link {
+  color: #014421 !important;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #D4AF37 !important;
+  cursor: pointer;
+}
+
+/* Active link using React Router's NavLink 'active' class */
+.custom-navbar .nav-link.active {
+  color: #D4AF37 !important;
+  font-weight: bold;
+}
+
+
 /** End of Nav **/
+
+.card-custom-bg {
+  background-color: #FFFDF5 !important;
+  border-color: #f0eada;
+}
+
+.card-custom-bg .card-title {
+  color: #014421 !important;
+}
+
+.card-custom-bg .card-text {
+  color: #2e4e3f;
+  text-align: justify;
+}
 
 .card-img-fixed {
   height: 100%;
@@ -38,7 +80,7 @@
 .icon-circle {
   width: 48px;
   height: 48px;
-  border: 2px dotted #001f3f;
+  border: 2px dotted #D4AF37;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -48,25 +90,29 @@
 /*** End Contact ****/
 
 /*** Footer ***/
+.footer {
+  border-top: 4px solid #2e4e3f;
+}
+
 .footer-link {
-  color: #ffffffb3;
+  color: #014421 !important;
   padding: 0.25rem 0;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer p {
-  color: #ffffffb3 !important;
+  color: #014421 !important;
 }
 
 .footer-link:hover {
-  color: #0d6efd;
+  color: #D4AF37;
 }
 
 .footer-link.active {
   font-weight: bold;
-  color: #0d6efd !important;
-  border-left: 3px solid #0d6efd;
+  color: #D4AF37 !important;
+  border-left: 3px solid #D4AF37;
   padding-left: 0.5rem;
 }
 
@@ -76,3 +122,12 @@
 }
 
 /*** End Footer **/
+
+/***  Sections with different bg-color */
+.section-highlight-green {
+  background-color: #e6f4ea;
+  border-top: 4px solid #d0e8d8;
+  border-bottom: 4px solid #d0e8d8;
+  padding: 20px 0;
+}
+/** End section bg-color */

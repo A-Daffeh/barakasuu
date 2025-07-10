@@ -11,7 +11,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   heading,
   highlight,
   paragraph,
-  highlightColor = "#0d6efd",
+  highlightColor = "#D4AF37",
 }) => {
   return (
     <Container className="text-center my-5">
