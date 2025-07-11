@@ -2,13 +2,31 @@ import { Container, Row, Col, Form, Button, Toast, ToastContainer } from "react-
 import { Envelope, GeoAlt, Telephone } from "react-bootstrap-icons";
 import SectionHeader from "../utils/SectionHeader";
 import emailjs from "emailjs-com";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Contact = () => {
 
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState("");
   const [toastVariant, setToastVariant] = useState<"success" | "danger">("success");
+
+  useEffect(() => {
+      document.title = "Contact Us | Baraka Suu Adult Family Home";
+      const metaDescription = document.querySelector("meta[name='description']");
+      if (metaDescription) {
+        metaDescription.setAttribute(
+          "content",
+          "Get in touch with Baraka Suu Adult Family Home – reach us by phone, email, or visit our location in Stanwood, WA."
+        );
+      } else {
+        const meta = document.createElement("meta");
+        meta.name = "description";
+        meta.content =
+          "Get in touch with Baraka Suu Adult Family Home – reach us by phone, email, or visit our location in Stanwood, WA.";
+        document.head.appendChild(meta);
+      }
+  }, []);
+
   
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();

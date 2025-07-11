@@ -2,6 +2,7 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import SectionHeader from "../utils/SectionHeader";
+import { useEffect } from "react";
 
 const images = [
   {
@@ -40,6 +41,25 @@ const contents = [
 ];
 
 const Services = () => {
+
+  useEffect(() => {
+      document.title = "Services | Baraka Suu Adult Family Home";
+      const metaDescription = document.querySelector("meta[name='description']");
+      if (metaDescription) {
+        metaDescription.setAttribute(
+          "content",
+          "Explore holistic services from 24/7 personal care and dementia support to nutritional meals and engaging activities."
+        );
+      } else {
+        const meta = document.createElement("meta");
+        meta.name = "description";
+        meta.content =
+          "Explore holistic services from 24/7 personal care and dementia support to nutritional meals and engaging activities.";
+        document.head.appendChild(meta);
+      }
+  }, []);
+
+
   return (
     <>
       <SectionHeader

@@ -1,5 +1,6 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 import SectionHeader from "../utils/SectionHeader";
+import { useEffect } from "react";
 
 const contents = [
   {
@@ -30,6 +31,24 @@ const contents = [
 
 
 const About = () => {
+
+    useEffect(() => {
+        document.title = "About Us | Baraka Suu Adult Family Home";
+        const metaDescription = document.querySelector("meta[name='description']");
+        if (metaDescription) {
+            metaDescription.setAttribute(
+            "content",
+            "Learn about Baraka Suu Adult Family Home's mission and vision - a sanctuary of compassionate care and meaningful living."
+            );
+        } else {
+            const meta = document.createElement("meta");
+            meta.name = "description";
+            meta.content =
+            "Learn about Baraka Suu Adult Family Home's mission and vision - a sanctuary of compassionate care and meaningful living.";
+            document.head.appendChild(meta);
+        }
+    }, []);
+
     return (
         <>
             <SectionHeader

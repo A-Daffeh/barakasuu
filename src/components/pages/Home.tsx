@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import SlideShow from "../slider/SlideShow";
 import { ChatHeart, HeartPulse, House } from "react-bootstrap-icons";
@@ -25,8 +26,28 @@ const contents = [
 ];
 
 const Home = () => {
+
+    useEffect(() => {
+        document.title = "Home | Baraka Suu Adult Family Home";
+        const metaDescription = document.querySelector("meta[name='description']");
+        if (metaDescription) {
+            metaDescription.setAttribute(
+            "content",
+            "Welcome to Baraka Suu Adult Family Home - where compassionate, personalized care meets a true sense of home in Stanwood, WA."
+            );
+        } else {
+            const meta = document.createElement("meta");
+            meta.name = "description";
+            meta.content =
+            "Welcome to Baraka Suu Adult Family Home - where compassionate, personalized care meets a true sense of home in Stanwood, WA.";
+            document.head.appendChild(meta);
+        }
+    }, []);
+
+
     return (
         <>
+
             <SlideShow />
 
             <SectionHeader 
