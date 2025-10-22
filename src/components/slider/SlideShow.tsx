@@ -8,7 +8,7 @@ const SlideShow = () => {
             
             <Carousel.Item>
                 <div className='carousel-image-wrapper'>
-                    <img src="/images/slide1.jpg" className="d-block w-100 carousel-image" />
+                    <img src="/images/img-15.png" className="d-block w-100 carousel-image" />
                     <div className='carousel-overlay'></div>
                 </div>
                
@@ -20,7 +20,7 @@ const SlideShow = () => {
 
             <Carousel.Item>
                 <div className='carousel-image-wrapper'>
-                    <img src="/images/slide2.jpeg" className="d-block w-100 carousel-image" />
+                    <img src="/images/img-12.png" className="d-block w-100 carousel-image" />
                     <div className='carousel-overlay'></div>
                 </div>
                 
@@ -32,7 +32,7 @@ const SlideShow = () => {
 
             <Carousel.Item>
                 <div className='carousel-image-wrapper'>
-                    <img src="/images/slide3.webp" className="d-block w-100 carousel-image" />
+                    <img src="/images/img-17.png" className="d-block w-100 carousel-image" />
                     <div className='carousel-overlay'></div>
                 </div>
                 

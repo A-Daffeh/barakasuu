@@ -6,34 +6,54 @@ import { useEffect } from "react";
 
 const images = [
   {
-    original: "https://picsum.photos/id/1018/1000/600/",
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
+    original: "/images/img-11.png",
+    thumbnail: "/images/img-11.png",
   },
   {
-    original: "https://picsum.photos/id/1015/1000/600/",
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
+    original: "/images/img-12.png",
+    thumbnail: "/images/img-12.png",
   },
   {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
+    original: "/images/img-13.png",
+    thumbnail: "/images/img-13.png",
+  },
+  {
+    original: "/images/img-14.png",
+    thumbnail: "/images/img-14.png",
+  },
+  {
+    original: "/images/img-15.png",
+    thumbnail: "/images/img-15.png",
+  },
+  {
+    original: "/images/img-16.png",
+    thumbnail: "/images/img-16.png",
+  },
+  {
+    original: "/images/img-17.png",
+    thumbnail: "/images/img-17.png",
+  },
+  {
+    original: "/images/img-18.png",
+    thumbnail: "/images/img-18.png",
   },
 ];
 
 const contents = [
   {
-    image: "/images/family.jpg",
+    image: "/images/img-8.png",
     name: "Thoughtful Amenities",
     description:
       "From cozy living areas to peaceful gardens, every feature in our home is designed to promote comfort, engagement, and well-being. We prioritize spaces that feel inviting, safe, and truly home-like.",
   },
   {
-    image: "/images/family.jpg",
+    image: "/images/img-9.png",
     name: "Dedicated Care Team",
     description:
       "Our compassionate caregivers are the heart of Baraka Suu. With hands-on support, attentive listening, and heartfelt care, they ensure every resident is seen, heard, and cared for as family.",
   },
   {
-    image: "/images/family.jpg",
+    image: "/images/img-10.png",
     name: "Holistic Services",
     description:
       "We provide 24/7 care tailored to individual needs from personal assistance and medication management to nutritious meals, housekeeping, and social activities that uplift and connect.",
@@ -157,7 +177,7 @@ const Services = () => {
             </Col>
             <Col md={4}>
               <img
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80"
+                src="/images/our-team.jpg"
                 alt="Join our team"
                 className="img-fluid rounded shadow"
               />

@@ -4,25 +4,25 @@ import { useEffect } from "react";
 
 const contents = [
   {
-    image: "/images/family.jpg",
+    image: "/images/img-4.png",
     name: "Personalized Care Approach",
     description:
       "Each resident is unique and so is their care. Our team develops personalized care strategies to support both independence and well-being every day.",
   },
   {
-    image: "/images/family.jpg",
+    image: "/images/img-5.png",
     name: "Compassionate, Skilled Staff",
     description:
       "Our caregivers are not just trained, they're deeply committed to nurturing lives with patience, professionalism, and genuine warmth.",
   },
   {
-    image: "/images/family.jpg",
+    image: "/images/img-6.png",
     name: "Comfort-Focused Living",
     description:
       "Our living spaces are thoughtfully designed to foster calm, safety, and belonging, creating an environment that truly feels like home.",
   },
   {
-    image: "/images/family.jpg",
+    image: "/images/img-7.png",
     name: "Meaningful Daily Engagement",
     description:
       "We offer enriching daily activities that promote joy, creativity, connection, and mental stimulation—keeping residents engaged and thriving.",
@@ -67,7 +67,7 @@ const About = () => {
                     <Col md={6}>
                         <Card className="h-100 shadow-sm border-0 card-custom-bg">
                             <Card.Body className="p-0">
-                                <img src="/images/family.jpg" 
+                                <img src="/images/img-3.png" 
                                 alt="Home Owners" 
                                 className="card-img-fixed w-100 rounded" 
                                 />
