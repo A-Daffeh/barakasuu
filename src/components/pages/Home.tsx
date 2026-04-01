@@ -135,7 +135,7 @@ const Home = () => {
                         boxShadow: "0 0 10px rgba(0,0,0,0.15)"
                     }}
                     >
-                    <source src="/videos/tour.mp4" type="video/mp4" />
+                    <source src="/videos/maintour.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                     </video>
                 </div>
