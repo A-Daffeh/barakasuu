@@ -26,7 +26,7 @@ const Footer = () => {
             <Col md={4}>
                 <h6 className="fw-bold mb-3">Contact Info</h6>
                 <p><GeoAltFill className="me-2" color="#D4AF37" />27913 76th DR NW, Standwood WA 98292</p>
-                <p><TelephoneFill className="me-2" color="#D4AF37" /> (360) 436-2518</p>
+                <p><TelephoneFill className="me-2" color="#D4AF37" /> (206)-446-7544 / (360)-436-2518</p>
                 <p><EnvelopeFill className="me-2" color="#D4AF37" /> info@barakasuuafh.com</p>
             </Col>
 

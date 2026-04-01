@@ -112,14 +112,30 @@ const Home = () => {
             </Container>
                 
             <Container className="my-5">
-                <h2 className="text-center fw-bold" style={{ color: '#014421' }}>Take a Virtual Tour of Our Home</h2>
-                <p className="text-center">Experience the comfort, care, and environment of Baraka Suu Adult Family Home.</p>
+                <h2 className="text-center fw-bold" style={{ color: '#014421' }}>
+                    Take a Virtual Tour of Our Home
+                </h2>
+                <p className="text-center">
+                    Experience the comfort, care, and environment of Baraka Suu Adult Family Home.
+                </p>
+
                 <div className="d-flex justify-content-center mt-3">
                     <video
-                    controls
-                    style={{ maxWidth: "100%", borderRadius: "12px", boxShadow: "0 0 10px rgba(0,0,0,0.15)" }}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    style={{
+                        width: "100%",
+                        maxWidth: "800px",
+                        height: "500px", 
+                        objectFit: "cover",
+                        objectPosition: "center",
+                        borderRadius: "12px",
+                        boxShadow: "0 0 10px rgba(0,0,0,0.15)"
+                    }}
                     >
-                    <source src="/videos/tour-1.mov" type="video/mp4" />
+                    <source src="/videos/BarakasuuAdultFamilyHome.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                     </video>
                 </div>
