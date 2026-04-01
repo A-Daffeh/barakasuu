@@ -127,7 +127,7 @@ const Home = () => {
                     playsInline
                     style={{
                         width: "100%",
-                        maxWidth: "800px",
+                        maxWidth: "400px",
                         height: "500px", 
                         objectFit: "cover",
                         objectPosition: "center",
@@ -135,7 +135,7 @@ const Home = () => {
                         boxShadow: "0 0 10px rgba(0,0,0,0.15)"
                     }}
                     >
-                    <source src="/videos/BarakasuuAdultFamilyHome.mp4" type="video/mp4" />
+                    <source src="/videos/Barakasuu.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                     </video>
                 </div>
