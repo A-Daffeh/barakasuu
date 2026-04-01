@@ -30,7 +30,7 @@ const Footer = () => {
                 <p><EnvelopeFill className="me-2" color="#D4AF37" /> info@barakasuuafh.com</p>
             </Col>
 
-
+  
         {/* Hours */}
           <Col md={2}>
             <h6 className="fw-bold mb-3">Reach Us</h6>
