@@ -127,7 +127,7 @@ const Home = () => {
                     playsInline
                     style={{
                         width: "100%",
-                        maxWidth: "400px",
+                        maxWidth: "800px",
                         height: "500px", 
                         objectFit: "cover",
                         objectPosition: "center",
